@@ -1,0 +1,47 @@
+  
+figure, figure img, figcaption {
+
+	width: 396px;
+	height: 250px;
+	box-sizing: border-box;
+	}
+figcaption {
+	background: #fff;
+	text-align: center;
+	padding-top: 6em;
+	transform: rotateY(-180deg);
+	}
+figure img, figcaption {
+	position: absolute;
+	backface-visibility: hidden;
+	}
+figure:hover{
+	transform: rotateY(-180deg);
+	}
+	figure {
+		box-shadow: 0px 0px 16px rgba(0,0,0,0.3);				
+		float: left;
+		transform-style: preserve-3d;
+		transition:transform 1s;
+		}
+	figure img, figcaption {
+		position: absolute;
+		backface-visibility: hidden;
+		}
+	figcaption {
+		background: #fff;
+		text-align: center;
+		padding-top: 6em;
+		transform: rotateY(-180deg);
+/*transform: rotateY(180deg);*/
+	}				
+						
+@keyframes flip {
+	100% {
+/*transform: rotateY(-360deg);*/
+	transform: rotateY(-180deg);
+/*transform: rotateY(180deg) translateX(-396px);*/
+/*transform: rotateY(-180deg) translateX(250px);*/
+		}
+	}
+							
